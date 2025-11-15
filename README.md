@@ -60,5 +60,4 @@ node ./dist/src/app.js
 - TypeScript
 - @maxhub/max-bot-api
 - Supabase Realtime
-- Docker (опционально)
 - dotenv
