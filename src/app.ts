@@ -30,7 +30,6 @@ class MaxBot {
     });
     this.bot.action(/delete_order_(\d+)/, async (ctx) => {
       const orderId = ctx.match![1];
-      await supabase.getClient().from("bookings").delete().eq("id", orderId);
       const { data: slot_id } = await supabase
         .getClient()
         .from("bookings")

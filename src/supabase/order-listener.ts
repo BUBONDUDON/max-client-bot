@@ -58,7 +58,7 @@ export class OrderRealtimeListener extends BaseRealtimeListener<
     const end = new Date(timeSlot!.end_time);
     const date = start.toISOString().split("T")[0];
     const start_time = start.toTimeString().slice(0, 5);
-    const end_time = end.toString().slice(0, 5);
+    const end_time = end.toTimeString().slice(0, 5);
     const msg = await this.maxBot.api.sendMessageToUser(
       user_id,
       `✅ <b>Предварительные данные заказа записи вокала</b>\n\n` +
