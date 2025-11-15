@@ -28,8 +28,7 @@ npm install
 Создай файл **.env** в корне проекта:
 
 ```env
-MAX_API_TOKEN=твой_токен_бота
-MAX_APP_ID=айди_бота
+TOKEN=твой_токен_бота
 SUPABASE_URL=https://xxxxxxxx.supabase.co
 SUPABASE_ANON_KEY=твой_anon_key
 ```
